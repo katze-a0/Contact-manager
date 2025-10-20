@@ -18,13 +18,7 @@ function App() {
     );
   };
 
-  // const saveData = () => {
-  //   localStorage.setItem("name", "value");
-  // };
 
-  // const getData = () => {
-  //   localStorage.getItem("name");
-  // };
 
   const deleteContact = (id) => {
     localStorage.removeItem("name");
@@ -46,11 +40,7 @@ function App() {
         {contact_obj.map((data) => (
           <Contact key={data.id} data={data} onDelete={deleteContact} />
         ))}
-        {/* <button onClick={saveData}>Save Data</button>
-        {/* <button onClick={getData}>Get Data</button> 
-        <button onClick={clearData} className="delete_button">
-          Delete name
-        </button> */}
+        
       </div>
     </>
   );

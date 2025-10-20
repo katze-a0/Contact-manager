@@ -3,9 +3,7 @@ const Contact = (props) => {
     localStorage.setItem("name", "value");
   };
 
-  // const getData = () => {
-  //   localStorage.getItem("name");
-  // };
+
 
   const handleDelete = () => {
     props.onDelete(props.data.id);
@@ -20,7 +18,7 @@ const Contact = (props) => {
         Location: {props.data.location}
         <br />
         <button onClick={saveData}>Edit Data</button>
-        {/* <button onClick={getData}>Get Data</button> */}
+      
         <button onClick={handleDelete} className="delete_button">
           Delete name
         </button>

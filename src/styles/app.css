@@ -5,59 +5,89 @@
   font-style: normal;
   font-variation-settings: 100;
 }
-
+body {
+  background: linear-gradient(135deg, #8ea1f8 0%, #9d4fec 100%);
+}
 .navbar {
-  background: #1761a2;
   color: #fff;
-  padding: 3px;
-  font-size: 28px;
+  padding: 5px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
+  margin: 20px;
+}
+.navbar:hover {
+  box-shadow: 6px 6px 12px rgba(241, 242, 243, 0.6);
+  transform: translateY(-2px);
 }
 
 .contact_list {
-  background: #ccc;
-  padding: 0.25rem;
-  margin: 5px;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  color: rgb(5, 5, 5);
+  margin: 50px;
+}
+.contact_list:hover {
+  box-shadow: 6px 6px 12px rgba(241, 242, 243, 0.6);
+  transform: translateY(-2px);
 }
 
 .contact {
   background: #fff;
   border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
+  padding: 15px;
+  margin: 15px;
 }
+
 .contact_adder {
-  background: #ccc;
-  padding: 0.5rem;
-  margin: 5px;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  color: white;
+  margin: 50px;
+}
+.contact_adder:hover {
+  box-shadow: 6px 6px 12px rgba(241, 242, 243, 0.6);
+  transform: translateY(-2px);
 }
 input {
   border: 0px;
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 15px;
   border-radius: 10px;
   outline: none;
+  font-weight: bold;
 }
 .delete_button {
-    border: 0px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 7px;
-    outline: none;
-    background: #f51515;
-    color: #ffffff;
-  }
-  
-button {
   border: 0px;
-  padding: 10px;
-  margin: 10px;
+  padding: 15px;
+  margin: 15px;
   border-radius: 7px;
   outline: none;
-  background: #4fbc1f;
+  background: #ce1212;
   color: #ffffff;
+  font-weight: medium;
   cursor: pointer;
 }
+
+button {
+  border: 0px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 7px;
+  outline: none;
+  background: #3b9a12;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: medium;
+}
+
+/* .sideButton {
+  margin-left: 900px;
+  margin-top: 20px;
+} */

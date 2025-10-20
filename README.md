@@ -1,12 +1,75 @@
-# React + Vite
+# Contact Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight contact management app built with React + Vite. Add, view, and delete contacts with localStorage persistence.This repo contains simple project structure for beginners looking for react project.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add new contacts (name, number, location)
+- Delete contacts
+- Data persists in localStorage
+- Simple user friendly UI
 
-## Expanding the ESLint configuration
+## Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone and install
+git clone https://github.com/katze-a0/Contact-manager.git
+cd contact-manager
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Contact.jsx
+│   ├── ContactAdder.jsx
+│   └── NavBar.jsx
+├── styles/
+│   └── app.css
+├── App.jsx
+└── main.jsx
+```
+
+## Tech Stack
+
+- React 18
+- Vite
+- CSS3
+- localStorage
+
+## Contributing
+
+Pull requests welcome! Some ideas:
+
+- Search/filter contacts
+- Edit contact feature
+- Form validation
+- Export to CSV
+- Dark mode
+- Mobile responsive design
+
+Fork, create a branch, make changes, and submit a PR.
+
+## To-Do
+
+- Functional edit button
+- Search feature for available contacts
+- Confirmation before delete
+- Phone No. validation
+- Better UI
+
+## License
+
+MIT
+
+## Author
+
+- [@katze-a0](https://github.com/katze-a0)

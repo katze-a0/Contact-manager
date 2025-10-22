@@ -38,7 +38,7 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
-![Alt text](./assests/preview.jpg)
+![Alt text](./src/assests/preview.jpg)
 ## Tech Stack
 
 - React 18

@@ -13,6 +13,7 @@ const ContactAdder = (props) => {
       location: location,
     };
     props.onContactAdded(contactdata_obj);
+    localStorage.setItem("name", "value");
   };
 
   return (

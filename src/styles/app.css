@@ -6,7 +6,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: linear-gradient(135deg, #053262  0%, #050f5b 100%);
+  background: linear-gradient(135deg, #053262 0%, #050f5b 100%);
+
   margin: 0;
   min-height: 100vh;
 }
@@ -48,8 +49,6 @@ body {
   box-shadow: 6px 6px 14px rgba(253, 254, 255, 0.6);
   transform: translateY(-2px);
 }
-
-
 
 h2 {
   font-family: "Caveat", cursive;
@@ -227,4 +226,47 @@ button {
 
 button:hover {
   background: #2d7a0d;
+}
+
+.edit_input {
+  width: 90%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.save_button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background: #32840f;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.cancel_button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background: #b71010;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.cancel_button:hover {
+  background: #8c0c0c;
 }

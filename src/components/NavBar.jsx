@@ -1,8 +1,10 @@
+import { BookOpen } from "lucide-react";
 const NavBar = () => {
   return (
     <>
       <div className="navbar">
-        <p>Contact Manager App using react + vite</p>
+        <BookOpen size={36} color="#ffffff" />
+        <h2>My Contact Manager </h2>
       </div>
     </>
   );

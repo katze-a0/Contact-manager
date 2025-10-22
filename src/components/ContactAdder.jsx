@@ -17,31 +17,33 @@ const ContactAdder = (props) => {
 
   return (
     <>
-      <h2>Enter Contact details:</h2>
-      <br />
-      <input
-        type="text"
-        value={name}
-        placeholder="contact name"
-        onChange={(e) => setName(e.target.value)}
-      />
-      <br /> <br />
-      <input
-        type="text"
-        value={num}
-        placeholder="number"
-        onChange={(e) => setNum(e.target.value)}
-      />
-      <br /> <br />
-      <input
-        type="text"
-        value={location}
-        placeholder="location"
-        onChange={(e) => setLocation(e.target.value)}
-      />
-      <br />
-      <br />
-      <button onClick={onClickHandler}>Add Contact</button>
+      <div className="input_fields">
+        <h2>Add Contact</h2>
+        <br />
+        <input
+          type="text"
+          value={name}
+          placeholder="Name"
+          onChange={(e) => setName(e.target.value)}
+        />
+        <br /> <br />
+        <input
+          type="text"
+          value={num}
+          placeholder="Phone Number"
+          onChange={(e) => setNum(e.target.value)}
+        />
+        <br /> <br />
+        <input
+          type="text"
+          value={location}
+          placeholder="Location"
+          onChange={(e) => setLocation(e.target.value)}
+        />
+        <br />
+        <br />
+        <button onClick={onClickHandler}>Add Contact</button>
+      </div>
     </>
   );
 };

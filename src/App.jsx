@@ -3,7 +3,7 @@ import Contact from "./components/Contact.jsx";
 import "./styles/app.css";
 import ContactAdder from "./components/ContactAdder.jsx";
 import NavBar from "./components/NavBar.jsx";
-
+import { SearchIcon} from "lucide-react";
 function App() {
   const getContacts = JSON.parse(localStorage.getItem("contact_obj"));
   const [contact_obj, setContact_obj] = useState(
@@ -18,8 +18,6 @@ function App() {
     );
   };
 
-
-
   const deleteContact = (id) => {
     localStorage.removeItem("name");
     const updatedContacts = contact_obj.filter((contact) => contact.id !== id);
@@ -29,18 +27,35 @@ function App() {
   return (
     <>
       <NavBar />
-      <div className="contact_adder">
-        <ContactAdder onContactAdded={addContactsData} />
-      </div>
-      <div className="contact_list">
-        <h3 style={{ color: "white", fontSize: "22px" }}>
-          {" "}
-          Available Contact list:{" "}
-        </h3>
-        {contact_obj.map((data) => (
-          <Contact key={data.id} data={data} onDelete={deleteContact} />
-        ))}
-        
+      <div className="flex_container">
+        <div className="contact_adder">
+          <ContactAdder onContactAdded={addContactsData} />
+        </div>
+       
+        <div className="contact_list">
+          <h2>Available Contact list</h2>
+          <input
+            type="text"
+            placeholder="Search Contact"
+            className="search_input"
+          />
+
+          <table id="contacts_table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {contact_obj.map((data) => (
+                <Contact key={data.id} data={data} onDelete={deleteContact} />
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );

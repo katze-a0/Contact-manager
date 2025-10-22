@@ -5,9 +5,10 @@ A lightweight contact management app built with React + Vite. Add, view, and del
 ## Features
 
 - Add new contacts (name, number, location)
-- Delete contacts
+- Delete and edit saved contacts
 - Data persists in localStorage
 - Simple user friendly UI
+  
 
 ## Setup
 
@@ -50,19 +51,17 @@ src/
 Pull requests welcome! Some ideas:
 
 - Search/filter contacts
-- Edit contact feature
 - Form validation
 - Export to CSV
-- Dark mode
 - Mobile responsive design
 
 Fork, create a branch, make changes, and submit a PR.
 
 ## To-Do
 
-- Functional edit button
+
 - Search feature for available contacts
-- Confirmation before delete
+- Confirmation  before delete
 - Phone No. validation
 - Better UI
 

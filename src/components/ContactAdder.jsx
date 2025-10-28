@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 
+import { UploadCloudIcon } from "lucide-react";
+
+
 const ContactAdder = (props) => {
   const [name, setName] = useState("");
   const [num, setNum] = useState("");
   const [location, setLocation] = useState("");
+
+
+
+  const [image, setImage] = useState("");
 
   const onClickHandler = () => {
     const contactdata_obj = {
@@ -11,6 +18,10 @@ const ContactAdder = (props) => {
       name: name,
       number: num,
       location: location,
+
+
+      image: image,
+
     };
     props.onContactAdded(contactdata_obj);
     localStorage.setItem("name", "value");
@@ -43,6 +54,13 @@ const ContactAdder = (props) => {
         />
         <br />
         <br />
+
+
+        <label for="file1" className='image_uploader'>Choose image</label>
+        <input type="file" id="file1" accept="image/*" />
+        <br />
+        <br />
+
         <button onClick={onClickHandler}>Add Contact</button>
       </div>
     </>

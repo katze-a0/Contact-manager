@@ -38,7 +38,11 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
+
 ![Alt text](./src/assests/preview.png)
+=======
+
+
 ## Tech Stack
 
 - React 18

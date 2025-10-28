@@ -269,6 +269,27 @@ button:hover {
   justify-content: center;
   gap: 8px;
 }
+
 .cancel_button:hover {
   background: #8c0c0c;
 }
+
+.cancel_butston:hover {
+  background: #8c0c0c;
+}
+input[type="file"] {
+  display: none;
+}
+.image_uploader {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 14px 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.image_uploader:hover {
+  background: #f3f4f6;
+}
+
